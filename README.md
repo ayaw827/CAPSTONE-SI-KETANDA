@@ -1,13 +1,16 @@
 # CAPSTONE-SI-KETANDA
 
-## Identitas Program
-*SI-KETANDA (Sistem Informasi ketahanan pangan daerah terpencil)*
+<img width="1125" height="482" alt="image" src="https://github.com/user-attachments/assets/81f85afd-e007-42d4-9c19-3a106ea1c6c3" />
+
+
+## Identitas Program 🪶
+*SI-KETANDA (Sistem Informasi ketahanan pangan daerah terpencil)*🌱🌿
 
 Sebuah sistem informasi berbasis digital yang dirancang untuk mendukung ketahanan pangan di beberapa wilayah dengan cara menghubungkan petani, distributor, pemerintah, dan customer dalam satu platform terpadu. Sistem ini mencakup pendataan hasil panen, distribusi pangan, pelaporan keluhan, serta fitur akses pasar sederhana antar pengguna.
 
 -----
 
-## Deskripsi Singkat Program
+## Deskripsi Singkat Program🍃
 
 SI-KETANDA merupakan Aplikasi yang dirancang untuk membantu aktivitas petani dalam pencatatan panen, memberikan keluhan kepada admin yang akan disalurkan kepada pemerintah. Juga membantu pencatatan distribusi pangan oleh distributor menuju pasar yang akan dibeli oleh customers. Sistem ini mengintegrasikan data pengguna petani, pemerintah, distributor, dan konsumen dalam satu kesatuan basis data yang terstruktur ke dalam satu basis data terpusat menggunakan *MYSQL (XAMPP)*. Aplikasi ini juga dibangun dengan bahasa *Java (NETBEANS IDE)* agar mudah dikembangkan serta efisien.
 
@@ -25,27 +28,37 @@ Customers : Setelah melakukan registrasi, Customers dapat melihat daftar komodit
 
 -----
 
-## Fitur Program
+## Fitur Program 🥬
 
 -----
 
-## Penerapan 5 pillar OOP
+## Penerapan 5 pillar OOP🐚
+
+- Encapsolution
+
+- Abstraction
+
+- Inheritance
+
+- Polymorphism
+
+
 
 -----
 
-## Struktur Folder/Package
+## Struktur Folder/Package/MVC 🌴
 
 -----
 
-## Library atau Framework yang digunakan
+## Library atau Framework yang digunakan 🌾
 
 -----
 
-## Cara Menggunakan Program
+## Cara Menggunakan Program 🌳
 
 -----
 
-## Tampilan GUI
+## Tampilan GUI 🍀
 
 Login form
 
@@ -61,7 +74,7 @@ Dashboard Customers
 
 -----
 
-## Dokumentasi dan Diagram pendukung
+## Dokumentasi dan Diagram pendukung 🍁
 
 ERD LOGICAL :
 
@@ -80,6 +93,9 @@ Laporan SBD :
 
 <img width="605" height="803" alt="image" src="https://github.com/user-attachments/assets/616d3ac5-c81a-4419-b13a-c046e3411be0" />
 
+Slide deck kami :
+
+https://www.canva.com/design/DAG3tjEqiN0/9JfKAXgpH-LgOUd1RLOogA/edit?utm_content=DAG3tjEqiN0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 
 -----
 
@@ -87,7 +103,7 @@ Laporan SBD :
 
 | Nama | Peran | Tanggung Jawab |
 | --- | --- | --- |
-| Nurhidayah | [Peran] | [Tanggung Jawab] |
-| Syauqi Etna L | [Peran] | [Tanggung Jawab] |
-| M. Romadhoni Alfatih | [Peran] | [Tanggung Jawab] |
-| Maria Claudia Meo | [Peran] | [Tanggung Jawab] |
+| Nurhidayah | Ketua | memimpin tim serta merancang konsepan program |
+| Syauqi Etna L | Github | Mendokumentasikan lewat README github |
+| M. Romadhoni Alfatih | Database | memastikan Database dan merancang Flowchart |
+| Maria Claudia Meo | UI/UX | merancang Slide dan membantu proses pengembangan program |
