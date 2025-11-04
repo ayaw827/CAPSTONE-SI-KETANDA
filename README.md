@@ -181,13 +181,24 @@ Sistem ini memiliki fitur utama:
 
 - Encapsolution
 
+*Encapsulation*, berarti membungkus data dan fungsi dalam satu kesatuan (class) untuk menjaga keamanan dan mengontrol akses. Atribut dibuat private dengan getter & setter untuk mengontrol akses data. Penerapan tersebut banyak di sebagain besar view.
+
 - Abstraction
+
+*Abstraction*, yaitu menyembunyikan detail kompleks dari pengguna dan hanya menampilkan fitur penting agar sistem lebih mudah dipahami. Kelas ini menyediakan kerangka dasar (method showInfo() abstrak) tanpa implementasi.
 
 - Inheritance
 
+*Inheritance*, memungkinkan suatu class mewarisi atribut dan metode dari class lain sehingga kode lebih efisien dan terstruktur. Misalnya, class User berperan sebagai class induk yang menyimpan atribut umum seperti id, username, password, dan role. Kemudian, class AdminPanel dan UserPanel dijadikan subclass yang mewarisi BasePanel.
+
 - Polymorphism
 
+*Polymorphism*, memberi kemampuan objek untuk memiliki banyak bentuk atau perilaku berbeda tergantung konteks penggunaannya. Metode yang sama (create, read, dll) dapat diimplementasikan dengan perilaku berbeda di class lain. Misalnya di kelas Interface
+
 - Interface
+
+*Interface*, berperan sebagai kontrak yang menentukan metode apa saja yang harus diimplementasikan oleh class tanpa menentukan cara implementasinya. Di program ini, class interface bernama IWelcomeAction diimplementasikan di MainFrame.
+
 
 
 
