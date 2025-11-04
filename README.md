@@ -30,6 +30,151 @@ Customers : Setelah melakukan registrasi, Customers dapat melihat daftar komodit
 
 ## Fitur Program 🥬
 
+Didalam Platform kami memiliki keunggulan berupa
+
+🧩 *1. Fitur Umum*
+
+### 🔐 *Login & Logout*
+
+* Setiap pengguna (Pemerintah, Admin, Petani, Distributor, Customer) harus melakukan *login* terlebih dahulu dengan username dan password.
+* Sistem memverifikasi data user pada database dan menentukan *role* pengguna.
+* Setelah selesai menggunakan sistem, user dapat melakukan *logout* untuk keluar dari akun.
+
+### 📝 *Registrasi*
+
+* User baru dapat melakukan *registrasi* dengan mengisi username, password, dan peran (role) yang sesuai.
+* Sistem akan memeriksa apakah username sudah digunakan.
+* Jika belum, sistem menyimpan data user baru ke dalam database dan menampilkan pesan *“Registrasi berhasil, silakan login kembali.”*
+
+---
+
+🏛️ *2. Fitur Pemerintah*
+
+### 📊 *Melihat Data Wilayah*
+
+* Pemerintah dapat melihat *data wilayah dan stok pangan* yang tersedia.
+* Data ini ditampilkan berdasarkan hasil input dari petani dan distributor.
+
+### 📈 *Analisis Laporan Panen*
+
+* Sistem membaca data wilayah & stok pangan.
+* Pemerintah dapat mengetahui wilayah yang mengalami *kekurangan stok* dan merencanakan *distribusi pangan* ke wilayah tersebut.
+
+### 🧾 *Mencetak Laporan*
+
+* Pemerintah dapat mencetak hasil laporan panen yang telah direkap oleh sistem.
+
+### 🌾 *Kelola Data Komoditas*
+
+* Pemerintah dapat menambah dan mengubah data jenis komoditas pangan untuk mengatur jenis barang yang diproduksi, didistribusikan, dan dijual dalam sistem.
+
+---
+
+ ⚙️ *3. Fitur Admin*
+
+### 👥 *Kelola Data User*
+
+* Admin dapat menambah, mengubah, dan menghapus akun pengguna (petani, distributor, customer, dll).
+* Semua perubahan akan disimpan ke dalam database.
+
+### 🌿 *Kelola Data Komoditas*
+
+* Admin dapat mengelola daftar komoditas (jenis hasil panen atau bahan pangan) dengan menambahkan, mengubah, atau menghapus data tersebut.
+
+### 🗺️ *Kelola Wilayah*
+
+* Admin dapat menambah dan mengubah data wilayah yang menjadi area distribusi pangan.
+
+### 📋 *Melihat Laporan*
+
+* Admin dapat mengambil data laporan dari database untuk ditampilkan atau digunakan sebagai bahan evaluasi.
+
+---
+
+👨‍🌾 *4. Fitur Petani*
+
+### 🌱 *Input Data Panen*
+
+* Petani dapat mengisi data hasil panen meliputi:
+
+  * Nama komoditas
+  * Jumlah komoditas
+  * Harga komoditas
+  * Tanggal panen
+* Sistem memeriksa kelengkapan data sebelum menyimpannya.
+
+### 📄 *Lihat Status Panen*
+
+* Petani dapat melihat *status panen* (misalnya apakah sudah diambil oleh distributor, masih tersimpan, atau sudah dijual).
+
+### 📬 *Kirim Keluhan*
+
+* Petani dapat mengirim *keluhan* ke admin jika ada masalah dengan data panen, distribusi, atau harga.
+* Sistem akan menyimpan keluhan dan menampilkan pesan konfirmasi penerimaan.
+
+---
+
+ 🚛 *5. Fitur Distributor*
+
+### 📦 *Lihat Stok Panen*
+
+* Distributor dapat melihat data stok hasil panen yang tersedia dari database.
+
+### ➕ *Tambah Distribusi*
+
+* Distributor dapat menambah data distribusi dengan menginput:
+
+  * Wilayah tujuan
+  * Jumlah distribusi
+  * Tanggal distribusi
+
+### 🧾 *Lihat Riwayat Distribusi*
+
+* Distributor dapat menampilkan data distribusi yang sudah dilakukan sebelumnya dari database.
+
+---
+
+🛒 *6. Fitur Customer*
+
+### 🧺 *Lihat Komoditas*
+
+* Customer dapat melihat daftar komoditas dan stok yang tersedia dari distributor.
+
+### 💰 *Beli Komoditas*
+
+* Customer dapat memilih item dan jumlah yang ingin dibeli.
+* Sistem memeriksa apakah stok mencukupi.
+
+  * Jika stok cukup → transaksi disimpan ke database.
+  * Jika stok tidak cukup → kembali ke menu customer.
+
+### 📜 *Lihat Riwayat Transaksi*
+
+* Customer dapat melihat daftar pembelian sebelumnya yang tersimpan di sistem.
+
+---
+
+ 🔁 *7. Interaksi Antarpengguna*
+
+* *Petani* menginput hasil panen → *Distributor* mengambil data stok untuk didistribusikan → *Pemerintah* memantau dan menganalisis distribusi serta stok wilayah.
+* *Customer* melakukan pembelian terhadap komoditas yang tersedia dari hasil distribusi.
+
+---
+
+## 📘 *Kesimpulan*
+
+Sistem ini memiliki fitur utama:
+
+| Aktor           | Fitur Utama                                                        |
+| --------------- | ------------------------------------------------------------------ |
+| *Admin*       | Kelola user, wilayah, komoditas, lihat laporan                     |
+| *Pemerintah*  | Lihat data wilayah, analisis stok, cetak laporan, kelola komoditas |
+| *Petani*      | Input panen, lihat status, kirim keluhan                           |
+| *Distributor* | Lihat stok, tambah distribusi, lihat riwayat                       |
+| *Customer*    | Lihat komoditas, beli produk, lihat transaksi                      |
+| *Semua User*  | Registrasi, login, logout                                          |
+
+
 -----
 
 ## Penerapan 5 pillar OOP🐚
