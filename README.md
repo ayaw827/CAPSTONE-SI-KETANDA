@@ -42,6 +42,8 @@ Customers : Setelah melakukan registrasi, Customers dapat melihat daftar komodit
 
 - Polymorphism
 
+- Interface
+
 
 
 -----
