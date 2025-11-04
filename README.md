@@ -312,6 +312,10 @@ Disini Library yang kami Gunakan adalah Jar serta Absolute Konektor untuk secara
 
 ### Login form
 
+<img width="1012" height="798" alt="image" src="https://github.com/user-attachments/assets/befcf83f-886c-43df-a9dd-39cb4be4eefd" />
+
+Di panel ini para pengguna dihadapkan untuk mengisi beberapa hal termasuk nama,username,dan Password guna untuk memulai dan juga bekerja kedalam Platform.
+
 ### Registrasi Form
 
 ### Welcome form
