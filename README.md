@@ -179,37 +179,70 @@ Sistem ini memiliki fitur utama:
 
 ## Penerapan 5 pillar OOP🐚
 
-- Encapsolution
+🧩 1. Encapsulation (Pembungkusan Data)
 
-*Encapsulation*, berarti membungkus data dan fungsi dalam satu kesatuan (class) untuk menjaga keamanan dan mengontrol akses. Atribut dibuat private dengan getter & setter untuk mengontrol akses data. Penerapan tersebut banyak di sebagain besar view.
+🔹 Pengertian:
+Encapsulation adalah proses menyembunyikan data atau detail internal dari sebuah objek agar tidak bisa diakses secara langsung dari luar kelas.
+Tujuannya agar data lebih aman dan hanya bisa diubah lewat method yang diizinkan (getter dan setter).
+
+🔹 Ciri-ciri di kode:
+
+Menggunakan private pada atribut.
+Akses dilakukan lewat get dan set.
+contohnya: 
 
 <img width="669" height="251" alt="image" src="https://github.com/user-attachments/assets/9705c7b8-927b-4ae4-a5e2-b688bd3c0aa2" />
 
+🧩 2. Abstraction (Abstraksi)
 
-- Abstraction
+🔹 Pengertian:
+Abstraction berarti menyembunyikan detail yang tidak penting dan hanya menampilkan hal-hal yang perlu saja.
+Biasanya dilakukan lewat abstract class atau interface.
 
-*Abstraction*, yaitu menyembunyikan detail kompleks dari pengguna dan hanya menampilkan fitur penting agar sistem lebih mudah dipahami. Kelas ini menyediakan kerangka dasar (method showInfo() abstrak) tanpa implementasi.
+🔹 Ciri-ciri di kode:
+Ada abstract class atau interface.
+Method abstrak tidak punya isi, hanya deklarasi.
+contohnya:
 
 <img width="247" height="46" alt="image" src="https://github.com/user-attachments/assets/6ebdf2a0-ee19-4456-a6a2-f52a04323cc9" />
 
+🔹 Pengertian:
+Inheritance memungkinkan sebuah class mewarisi atribut dan method dari class lain.
+Dengan ini, kamu bisa menghindari penulisan ulang kode dan membuat hierarki hubungan antar objek.
 
-- Inheritance
-
-*Inheritance*, memungkinkan suatu class mewarisi atribut dan metode dari class lain sehingga kode lebih efisien dan terstruktur. Misalnya, class User berperan sebagai class induk yang menyimpan atribut umum seperti id, username, password, dan role. Kemudian, class AdminPanel dan UserPanel dijadikan subclass yang mewarisi BasePanel.
+🔹 Ciri-ciri di kode:
+Menggunakan keyword extends.
+Subclass bisa menambah atau memodifikasi perilaku dari superclass.
+contohnya:
 
 <img width="288" height="17" alt="image" src="https://github.com/user-attachments/assets/3ed39253-e848-4080-943c-30b8998af2d6" />
 
+🧩 4. Polymorphism (Banyak Bentuk)
 
-- Polymorphism
+🔹 Pengertian:
+Polymorphism berarti satu method bisa memiliki banyak bentuk atau perilaku berbeda tergantung objek yang memanggilnya.
+Biasanya lewat @Override atau pemanggilan method yang sama tapi hasilnya berbeda.
 
-*Polymorphism*, memberi kemampuan objek untuk memiliki banyak bentuk atau perilaku berbeda tergantung konteks penggunaannya. Metode yang sama (create, read, dll) dapat diimplementasikan dengan perilaku berbeda di class lain. Misalnya di kelas Interface
+🔹 Ciri-ciri di kode:
+
+Menggunakan @Override.
+Superclass punya method yang sama dengan subclass.
+Contohnya:
 
 <img width="535" height="69" alt="image" src="https://github.com/user-attachments/assets/83d882bc-76d6-4317-b49f-be7b0da32334" />
 
 
-- Interface
+🧩 5. Interface
 
-*Interface*, berperan sebagai kontrak yang menentukan metode apa saja yang harus diimplementasikan oleh class tanpa menentukan cara implementasinya. Di program ini, class interface bernama KoneksiDatabase diimplementasikan di method Controller.
+🔹 Pengertian:
+Interface adalah kontrak atau template yang berisi method tanpa isi (belum diimplementasi).
+Class yang menggunakan interface harus membuat isi dari method tersebut.
+Biasanya dipakai untuk menstandarkan perilaku antar class berbeda.
+
+🔹 Ciri-ciri di kode:
+Menggunakan keyword interface.
+Class menggunakannya dengan implements.
+Contohnya:
 
 <img width="706" height="486" alt="image" src="https://github.com/user-attachments/assets/10f45797-3238-4d9a-ac83-67a7cff75573" />
 
