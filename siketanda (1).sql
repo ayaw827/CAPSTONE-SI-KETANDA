@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 03 Nov 2025 pada 05.31
+-- Waktu pembuatan: 04 Nov 2025 pada 11.20
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -85,11 +85,7 @@ CREATE TABLE `distribusi` (
 --
 
 INSERT INTO `distribusi` (`id_distribusi`, `jumlah_terkirim`, `tanggal_distribusi`, `status_distribusi`, `id_panen`) VALUES
-(1, '700', '2025-10-22', 'Terkirim', 1),
-(2, '600', '2025-10-21', 'Dikirim', 2),
-(3, '500', '2025-10-18', 'Terkirim', 3),
-(4, '550', '2025-10-15', 'Dikirim', 4),
-(5, '400', '2025-10-10', 'Pending', 5);
+(2, '600', '2025-10-21', 'Dikirim', 2);
 
 -- --------------------------------------------------------
 
@@ -138,14 +134,7 @@ CREATE TABLE `panen` (
 --
 
 INSERT INTO `panen` (`id_panen`, `nama_komoditas`, `jumlah_panen`, `harga_panen`, `tanggal_panen`, `id_petani`, `id_distribusi`) VALUES
-(1, 'Padi', 1000.00, 1500000.00, '2025-10-20', 1, 1),
-(2, 'Jagung', 800.00, 1200000.00, '2025-10-18', 2, 2),
-(3, 'Kedelai', 500.00, 900000.00, '2025-09-29', 3, 3),
-(4, 'Cabai', 600.00, 1100000.00, '2025-09-25', 4, 4),
-(5, 'Tomat', 700.00, 1300000.00, '2025-09-21', 5, 5),
-(6, 'Bawang Merah', 650.00, 1250000.00, '2025-09-19', 6, 1),
-(7, 'Jagung', 900.00, 1400000.00, '2025-10-10', 7, 2),
-(8, 'Cabai', 550.00, 950000.00, '2025-10-15', 8, 3);
+(2, 'Jagung', 800.00, 1200000.00, '2025-10-18', 2, 2);
 
 -- --------------------------------------------------------
 
@@ -171,8 +160,8 @@ CREATE TABLE `pemerintah` (
 INSERT INTO `pemerintah` (`id_pemerintah`, `id_user`, `jabatan`, `tugas_wilayah`, `tugas_ngawas`, `id_panen`, `id_petani`, `laporan_keluhan`) VALUES
 (1, 4, 'Pegawai Dinas Pertanian', 'Kecamatan Suka Makmur', 'Mengawasi panen padi', 1, 2, 'Keluhan tentang hama tikus di sawah Blok C'),
 (2, 4, 'Pegawai Dinas Pertanian', 'Kecamatan Suka Makmur', 'Mengawasi panen padi', 1, 2, 'Keluhan tentang hama tikus di sawah Blok C'),
-(3, 9, 'Kepala Bidang Ketahanan Pangan', 'Kabupaten Sukajadi', 'Memantau distribusi beras', 1, 3, 'Distribusi terlambat karena cuaca'),
-(4, 10, 'Petugas Lapangan', 'Desa Sukamaju', 'Memonitor stok beras', 1, 4, 'Petani kesulitan mendapatkan pupuk');
+(3, 9, 'Kepala Bidang Ketahanan Pangan', 'Kabupaten Sukajadi', 'Memantau distribusi beras', 1, NULL, 'Distribusi terlambat karena cuaca'),
+(4, 10, 'Petugas Lapangan', 'Desa Sukamaju', 'Memonitor stok beras', 1, NULL, 'Petani kesulitan mendapatkan pupuk');
 
 -- --------------------------------------------------------
 
@@ -194,46 +183,36 @@ CREATE TABLE `petani` (
 --
 
 INSERT INTO `petani` (`id_petani`, `id_user`, `komoditas`, `wilayah_petani`, `keluhan`, `status_panen`) VALUES
-(1, 2, 'Padi', 'Cimahi Selatan', 'Serangan hama wereng', 'Panen'),
-(2, 3, 'Jagung', 'Cimahi Utara', 'Cuaca ekstrem', 'Tertunda'),
-(3, 2, 'Kedelai', 'Cimahi Tengah', 'Tanah kering', 'Proses'),
-(4, 3, 'Cabai', 'Cimahi Timur', 'Harga bibit naik', 'Tumbuh'),
-(5, 2, 'Tomat', 'Cimahi Selatan', 'Kelebihan air', 'Siap'),
-(6, 3, 'Bawang Merah', 'Cimahi Utara', 'Normal', 'Proses'),
-(7, 2, 'Padi', 'Cimahi Barat', 'Lahan sempit', 'Proses'),
-(8, 3, 'Jagung', 'Cimahi Tengah', 'Pupuk mahal', 'Proses'),
-(9, 2, 'Kedelai', 'Cimahi Utara', 'Cuaca bagus', 'Panen'),
-(10, 3, 'Cabai', 'Cimahi Selatan', 'Hama ulat', 'Proses'),
-(11, 2, 'Tomat', 'Cimahi Tengah', 'Daun menguning', 'Panen'),
-(12, 3, 'Bawang Merah', 'Cimahi Utara', 'Cuaca lembab', 'Proses'),
-(13, 2, 'Padi', 'Cimahi Selatan', 'Kekurangan pupuk', 'Proses'),
-(14, 3, 'Jagung', 'Cimahi Utara', 'Kelembaban tinggi', 'Tumbuh'),
-(15, 2, 'Kedelai', 'Cimahi Timur', 'Harga pupuk naik', 'Panen'),
-(16, 3, 'Cabai', 'Cimahi Tengah', 'Normal', 'Proses'),
-(17, 2, 'Tomat', 'Cimahi Selatan', 'Penyakit daun', 'Proses'),
-(18, 3, 'Bawang Merah', 'Cimahi Utara', 'Serangan jamur', 'Proses'),
-(19, 2, 'Padi', 'Cimahi Barat', 'Lahan basah', 'Panen'),
-(20, 3, 'Jagung', 'Cimahi Timur', 'Terserang belalang', 'Proses'),
-(21, 2, 'Kedelai', 'Cimahi Utara', 'Normal', 'Siap'),
-(22, 3, 'Cabai', 'Cimahi Tengah', 'Harga stabil', 'Tumbuh'),
-(23, 2, 'Tomat', 'Cimahi Selatan', 'Daun busuk', 'Proses'),
-(24, 3, 'Bawang Merah', 'Cimahi Utara', 'Terserang lalat buah', 'Proses'),
-(25, 2, 'Padi', 'Cimahi Tengah', 'Panen mundur', 'Proses'),
-(26, 3, 'Jagung', 'Cimahi Selatan', 'Terserang tikus', 'Panen'),
-(27, 2, 'Kedelai', 'Cimahi Barat', 'Kering', 'Proses'),
-(28, 3, 'Cabai', 'Cimahi Utara', 'Hujan berlebihan', 'Proses'),
-(29, 2, 'Tomat', 'Cimahi Tengah', 'Aman', 'Panen'),
-(30, 3, 'Bawang Merah', 'Cimahi Timur', 'Daun kering', 'Proses'),
-(31, 2, 'Padi', 'Cimahi Selatan', 'Subur', 'Siap'),
-(32, 3, 'Jagung', 'Cimahi Barat', 'Normal', 'Proses'),
-(33, 2, 'Kedelai', 'Cimahi Tengah', 'Daun rusak', 'Proses'),
-(34, 3, 'Cabai', 'Cimahi Selatan', 'Panas ekstrem', 'Proses'),
-(35, 2, 'Tomat', 'Cimahi Utara', 'Aman', 'Proses'),
-(36, 3, 'Bawang Merah', 'Cimahi Timur', 'Harga naik', 'Proses'),
-(37, 2, 'Padi', 'Cimahi Barat', 'Hama wereng', 'Panen'),
-(38, 3, 'Jagung', 'Cimahi Tengah', 'Daun rusak', 'Proses'),
-(39, 2, 'Kedelai', 'Cimahi Selatan', 'Tanaman kering', 'Proses'),
-(40, 3, 'Cabai', 'Cimahi Utara', 'Normal', 'Panen');
+(2, 3, 'Jagung', 'Cimahi Tengah', 'Cuaca ekstrem', 'Panen'),
+(43, 13, 'Jagung', 'Cimahi Barat', 'Tanah kering', 'Panen'),
+(44, 13, 'Cabai', 'Cimahi Selatan', 'Serangan ulat', 'Proses'),
+(45, 14, 'Tomat', 'Cimahi Timur', 'Kelebihan air', 'Tumbuh'),
+(46, 14, 'Bawang Merah', 'Cimahi Tengah', 'Harga tinggi', 'Panen'),
+(47, 15, 'Padi', 'Cimahi Selatan', 'Cuaca ekstrem', 'Proses'),
+(48, 15, 'Jagung', 'Cimahi Timur', 'Normal', 'Panen'),
+(49, 16, 'Kedelai', 'Cimahi Barat', 'Kurang pupuk', 'Proses'),
+(50, 16, 'Cabai', 'Cimahi Tengah', 'Harga bibit naik', 'Tumbuh'),
+(51, 2, 'Padi', 'Cimahi Selatan', 'Serangan hama wereng', 'Panen'),
+(52, 2, 'Kedelai', 'Cimahi Tengah', 'Harga bibit naik', 'Tumbuh'),
+(53, 2, 'Tomat', 'Cimahi Barat', 'Cuaca ekstrem', 'Proses'),
+(54, 2, 'Jagung', 'Cimahi Utara', 'Normal', 'Proses'),
+(56, 3, 'Bawang Merah', 'Cimahi Timur', 'Tanah keras', 'Panen'),
+(57, 3, 'Jagung', 'Cimahi Selatan', 'Hama ulat', 'Proses'),
+(58, 3, 'Padi', 'Cimahi Barat', 'Cuaca lembab', 'Panen'),
+(60, 2, 'Kedelai', 'Cimahi Tengah', 'Harga gabah turun', 'Proses'),
+(61, 2, 'Tomat', 'Cimahi Barat', 'Cuaca panas ekstrem', 'Tumbuh'),
+(62, 2, 'Jagung', 'Cimahi Utara', 'Pupuk langka', 'Siap'),
+(63, 2, 'Bawang Merah', 'Cimahi Tengah', 'Normal', 'Proses'),
+(71, 3, 'Jagung', 'Cimahi Selatan', 'Hama ulat', 'Tumbuh'),
+(72, 3, 'Padi', 'Cimahi Barat', 'Cuaca lembab', 'Proses'),
+(73, 13, 'Padi', 'Cimahi Utara', 'Harga gabah turun', 'Panen'),
+(74, 13, 'Kedelai', 'Cimahi Tengah', 'Cuaca lembab', 'Proses'),
+(75, 13, 'Tomat', 'Cimahi Selatan', 'Normal', 'Proses'),
+(76, 15, 'Jagung', 'Cimahi Timur', 'Harga pupuk naik', 'Proses'),
+(77, 15, 'Bawang Merah', 'Cimahi Selatan', 'Serangan hama ulat buah', 'Panen'),
+(78, 14, 'Cabai', 'Cimahi Tengah', 'Kelebihan air', 'Proses'),
+(79, 14, 'Tomat', 'Cimahi Tengah', 'Daun menguning', 'Tumbuh'),
+(80, 16, 'Jagung', 'Cimahi Tengah', 'Harga stabil', 'Panen');
 
 -- --------------------------------------------------------
 
@@ -255,12 +234,7 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `jumlah_transaksi`, `harga_total`, `tanggal_transaksi`, `status_transaksi`, `id_distribusi`) VALUES
-(1, '700', '2100000', '2025-10-23', 'Selesai', 1),
-(2, '600', '1800000', '2025-10-23', 'Selesai', 2),
-(3, '500', '1500000', '2025-10-20', 'Selesai', 3),
-(4, '550', '1650000', '2025-10-19', 'Selesai', 4),
-(5, '400', '1200000', '2025-10-18', 'Pending', 5),
-(6, '650', '1950000', '2025-10-17', 'Selesai', 1);
+(2, '600', '1800000', '2025-10-23', 'Selesai', 2);
 
 -- --------------------------------------------------------
 
@@ -286,12 +260,17 @@ INSERT INTO `user` (`id_user`, `nama_user`, `username`, `password`, `role`, `ema
 (2, 'Budi Santoso', 'petani1', '12345', 'petani', NULL),
 (3, 'Siti Aminah', 'petani2', '12345', 'petani', NULL),
 (4, 'Dinas Pertanian Cimahi', 'pem1', '12345', 'pemerintah', NULL),
-(5, 'CV Agro Sejahtera', 'dis1', '12345', 'distributor', NULL),
+(5, 'aya', 'admin23', '12345', 'admin', NULL),
 (6, 'PT Tani Makmur', 'dis2', '12345', 'distributor', NULL),
 (7, 'Ibu Sari', 'cust1', '12345', 'customer', NULL),
 (8, 'Pak Rudi', 'cust2', '12345', 'customer', NULL),
 (9, 'Badan Ketahanan Pangan', 'pem2', '12345', 'pemerintah', NULL),
-(10, 'Petugas Lapangan Sukamaju', 'pem3', '12345', 'pemerintah', NULL);
+(10, 'Petugas Lapangan Sukamaju', 'pem3', '12345', 'pemerintah', NULL),
+(13, 'Ahmad Yusuf', 'petani3', '12345', 'petani', NULL),
+(14, 'Rina Marlina', 'petani4', '12345', 'petani', NULL),
+(15, 'Dewi Anggraeni', 'petani5', '12345', 'petani', NULL),
+(16, 'Eko Prasetyo', 'petani6', '12345', 'petani', NULL),
+(17, 'Rudi Hartono', 'petani7', '12345', 'petani', NULL);
 
 --
 -- Indexes for dumped tables
@@ -378,10 +357,16 @@ ALTER TABLE `pemerintah`
   MODIFY `id_pemerintah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT untuk tabel `petani`
+--
+ALTER TABLE `petani`
+  MODIFY `id_petani` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+
+--
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
