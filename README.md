@@ -331,15 +331,6 @@ Disini Library yang kami Gunakan adalah Jar serta Absolute Konektor untuk secara
 
 -----
 
-## Cara Menggunakan Program 🌳
-
-### Langkah Pertama
-
-### Langkah Kedua
-
-### Langkah Ketiga
-
------
 
 ## Tampilan GUI 🍀
 
@@ -357,9 +348,21 @@ Di Panel ini para pengguna Baru akan melakukan registrasi dengan menginput nama,
 
 ### Welcome form
 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/dc2cf9c9-b4fe-4356-9a19-cc5833c3a141" />
 
+bila berhasil menemukan panel ini maka pengguna berhasil memasuki web SI-KETANDA
 
 ### Dashboard Petani
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/fa776352-62ca-468a-8210-31ada1bccd67" />
+
+para petani yang mengakses web akan menemui laman ini yang dimana mereka bisa mengetahui komoditas baik jumlah dan nama,Tanggal panen,wilayah bertani maupun status hasil panen.
+
+lanjut para petani dapat melakukan "save" untuk data yang mereka sudah inputkan ataupun lanjut mengirimkan keluhan.
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/4d36415d-4618-4adb-b15e-857924a98c4a" />
+
+didalam forum keluhan. para petani dapat lansung memberitahukan keluhan yang mereka ingin sampaikan dan akan masuk ke admin.
 
 ### Dashboard Distributor
 
@@ -368,6 +371,14 @@ Di Panel ini para pengguna Baru akan melakukan registrasi dengan menginput nama,
 ### Dashboard Pemerintah
 
 ### Dashboard Customers
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/41abaf35-7268-44be-ab85-6b294078b84b" />
+
+Disini para customers dapat melihat beragam komoditas yang dijual dari para petani dan juga distributor. ini adalah daftar komoditas yang mereka bisa beli.
+
+dan disaat pelanggan berhasil membeli suatu komoditas maka sistem akan mencatatnya dengan riwayat transaksi
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e90a8063-a45e-4183-a336-0225de35499c" />
 
 -----
 
