@@ -368,6 +368,32 @@ didalam forum keluhan. para petani dapat lansung memberitahukan keluhan yang mer
 
 ### Dashboard Admin
 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/10c885b4-4951-45ac-880f-702b46b40a3b" />
+
+didalam panel ini adalah menu untuk para admin mengamati,maupun melakukan perubahan pada suatu data ada 4 hal yaitu:
+
+
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/77677b1f-7575-4d4a-922d-d870a280613c" />
+
+yaitu mengelola user dengan admin bisa melihat nama dan username manapun maupun melakukan penambahan,pengeditan,penghapusan,dan penyimpanan user yang ada
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2562e8ae-a7c4-4c63-a860-14d8f34804eb" />
+
+mengelola pada komoditas pertanian yang dihasilkan oleh petani di wilayah dengan juga melihat status panennya
+
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e1b93e26-164e-438a-8d4c-2188d05c23e3" />
+
+melihat kepada wilayah yang berada didalam sistem.
+
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/d8179ffa-d872-4a0e-95a0-e2a8956050b3" />
+
+dan terakhir melihat kepada laporan yang bisa dikelola melalui data-data mulai dari nama petani,komoditas yang dihasilkan,wilayah yang ditapaki,melihat status panen, dan mengetahui keluhan dari para petani
+
+
+
 ### Dashboard Pemerintah
 
 ### Dashboard Customers
